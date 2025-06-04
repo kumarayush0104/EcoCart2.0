@@ -6,7 +6,7 @@ const carbonFootprintRoutes = require('../routes/carbonFootprint');
 
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URI || 'mongodb+srv://testdb:KPC2jlPP2XLj3V7q@cluster0.ocx18hq.mongodb.net/newdb?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
 const db = mongoose.connection;
 
